@@ -15,8 +15,9 @@ secondArray (масив) і maxLength (число). Функція повинн�
     const combinedArray = firstArray.concat(secondArray);
     if (combinedArray.length > maxLength) {
       return combinedArray.slice(0, maxLength);
+    } else {
+      return combinedArray;
     }
-    return combinedArray;
   }
 
 /* Перевiрка функцii */

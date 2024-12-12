@@ -13,13 +13,13 @@
 
 `use strict`;
   function filterArray(numbers, value) {
-    const filteredNumbers = [];
-      for (const number of numbers) {
-      if (number > value) {
-        filteredNumbers.push(number);
+    let result = [];
+      for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > value) {
+          result.push(numbers[i]);
       }
     }
-    return filteredNumbers;
+    return result;
   }
 
     /* Перевiрка функцii */
